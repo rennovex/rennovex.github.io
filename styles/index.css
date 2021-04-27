@@ -9,6 +9,44 @@ body {
   background-color: #171717;
   width: 100vw;
 }
+.nav .closeMenu .icons {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+/* NAV ANIMATION FIX !!!!!!
+
+@media only screen and(max-width:800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+*/
+
 @media screen and (min-width: 769px) {
   .navbar {
     position: fixed;
@@ -21,20 +59,20 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  .nav-links {
+  .mainMenu {
     margin-right: 10%;
     align-self: center;
     display: flex;
     justify-content: space-around;
     width: 35%;
   }
-  .nav-links a {
+  .mainMenu a {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
   }
-  .nav-links li {
+  .mainMenu li {
     list-style: none;
   }
 
@@ -49,7 +87,21 @@ body {
   #logo-img {
     height: 85px;
   }
-
+  .fas {
+    color: #fff;
+  }
+  .fab {
+    color: #fff;
+  }
+  nav .openMenu {
+    display: none;
+  }
+  nav .closeMenu {
+    display: none;
+  }
+  nav .icons {
+    display: none;
+  }
   .hero {
     background-color: #1f1f1f;
     height: 80vh;
@@ -106,16 +158,40 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .nav-links {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainMenu {
     display: none;
   }
   .openMenu {
-    display: block;
-    color: #fff;
-    size: 2rem;
   }
   #logo-img {
-    height: 20vw;
+    height: 4rem;
+    padding: 6% 15% 0 15%;
+  }
+  .logo {
+  }
+  fas {
+    font-size: 2rem;
+    color: #fff;
+  }
+  fab {
+    color: #fff;
+  }
+  nav .openMenu {
+    display: block;
+    padding: 0 10%;
+    color: #fff;
+    font-size: 2rem;
+  }
+  nav .closeMenu {
+    display: none;
+  }
+  nav .icons {
+    display: none;
   }
 
   .hero {
@@ -139,7 +215,7 @@ body {
   .hero-header {
     display: inline;
     font-weight: bolder;
-    font-size: 15vw;
+    font-size: 3.5rem;
     margin-bottom: 1vh;
   }
   .hero-header div {
@@ -151,7 +227,7 @@ body {
     margin-top: 2vh;
     display: block;
     margin-bottom: 6vh;
-    font-size: 5vw;
+    font-size: 1.4rem;
     width: 100%;
     height: auto;
   }
