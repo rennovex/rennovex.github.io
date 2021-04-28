@@ -165,7 +165,7 @@ body {
     height: 100vh;
     width: 60vw;
     min-width:130px;
-    background-image:linear-gradient(black,rgb(65, 65, 65)) ;
+    background-image:linear-gradient(rgb(24, 24, 24),rgb(36, 36, 36)) ;
     position: fixed;
   }
   .parentmenuclass .hidingbody{
