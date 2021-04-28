@@ -6,28 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/aa38e5fef7.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <nav class="navbar">
+  <body class="indexbody">
+    <nav class="navbar" style="z-index: 4;">
       <header class="logo">
         <a href="#">
       <img id="logo-img" src="img/logo.svg" alt="logo" /></a>
     </header>
-      <div class="openMenu"><i class="fas fa-bars"></i></div>
+      <a class="openMenu" onclick="ToggleFunction()"><div><i class="fas fa-bars" style="margin-right: -10px;"></i></div></a>
       <ul class="mainMenu">
         <li><a href="#">HOME</a></li>
         <li><a href="#">PAGES</a></li>
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">CONTACT</a></li>
-      </ul> 
+      </ul>
       <div class="closeMenu"><i class="fas fa-times"></i></div>
       <span class="icons">
         <i class="fab fa-instagram"></i>
         <i class="fab fa-linkedin"></i></span>
       
     </nav>
-    <div class="hero">
+    <div class="parentmenuclass">
+    <div id="navcontainerformob" style="display: none;"> 
+      <div class="mainMenumob">
+        <a href="#" ><span class="fas fa-home" style="color: green;"></span> <span>HOME</span></a>
+        <a href="#" ><span class="fas fa-file" style="color:white"></span> <span>PAGES</span></a>
+        <a href="#" ><span class="fas fa-user" style="color: orange;"></span> <span>ABOUT</span></a>
+        <a href="#" ><span class="fas fa-phone" style="color: red;"></span> <span>CONTACT</span></a>
+      </div>
+    </div>
+    <div class="hidingbody" onclick="toggleClose()" style="display: none;">
+      <p>xdsfg</p>
+    </div>
+    </div>
+    <div class="hero" style="z-index: 0;">
       <div class="hero-text">
-        <div class="hero-header" ">
+        <div class="hero-header">
           Renno
           <div style="color: red;display: inline;">
             vex.
@@ -39,6 +52,7 @@
         </div>
         <div class="hero-button"> Hire Us</div>
       </div>
-     
-  <script src="scripts/index.js"></script>
+     </div>
+    </body>
+    <script type="text/javascript" src="scripts/index.js"></script>
 </html>
