@@ -163,7 +163,8 @@ body {
     top: 0;
     z-index: 4;
     height: 100vh;
-    width: 40vh;
+    width: 60vw;
+    min-width:130px;
     background-image:linear-gradient(black,rgb(65, 65, 65)) ;
     position: fixed;
   }
