@@ -18,8 +18,6 @@ var container = document.getElementById("navcontainerformob");
 var containertohide2 = document.getElementsByName("hero")[0];
 var hidingcontainer = document.getElementsByClassName("hidingbody")[0];
 function ToggleFunction() {
-    console.log("sasi")
-    
     var containertohide1 = document.getElementsByName("closeMenu")[0];
     var containertohide3 = document.getElementsByName("indexbody")[0];
 
