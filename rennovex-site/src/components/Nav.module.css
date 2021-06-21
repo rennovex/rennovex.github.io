@@ -1,0 +1,19 @@
+.nav__container{
+   display: flex;
+   flex-direction: row-reverse;
+   padding:10px 0;
+}
+
+.nav__ul{
+    display: flex;
+    color:white;
+    list-style-type: none;
+    margin-right: 20px;
+    
+}
+
+li{
+    margin:0 10px;
+    font-size: 24;
+    font-family: Poppins;
+}
