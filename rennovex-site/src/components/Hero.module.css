@@ -56,3 +56,12 @@
     color: #FFFFFF;
     padding:0 30px;
 }
+
+@media (max-width:600px) {
+    .hero__intro__header{
+        font-size: 50px;
+    }
+    .hero__intro__desc{
+        width:90%;
+    }
+}

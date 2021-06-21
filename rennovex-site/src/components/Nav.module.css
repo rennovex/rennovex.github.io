@@ -17,3 +17,9 @@ li{
     font-size: 24;
     font-family: Poppins;
 }
+
+@media (max-width:400px) {
+    li{
+        margin:0 5px;
+    }
+}
