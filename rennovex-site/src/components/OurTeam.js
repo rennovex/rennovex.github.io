@@ -15,9 +15,10 @@ const OurTeam = () => {
     const images = [
         src, 
         src, 
-        src,
+        'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/Untitled87_20210621181311.png?alt=media&token=d8ecc5c4-7a0c-4ba3-be86-b7d103fc2f25',
         'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/IMG_20201231_204412__01.jpg?alt=media&token=d1e448c8-201d-4d99-a99a-d28be505b9bf', 
         'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/20210607_111605.jpg?alt=media&token=9a80d7a5-60b8-4591-9c5c-18beee9229c9', 
+        'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/200798_Neeraj%20S%20D.jpg?alt=media&token=c6f7ff64-009b-44d7-a965-b331ae37e231',
         'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/IMG_20210621_162741.jpg?alt=media&token=57339546-44b7-4716-8e4f-d978974a5057',
         src, 
         src, 
