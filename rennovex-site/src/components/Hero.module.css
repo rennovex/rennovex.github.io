@@ -1,6 +1,6 @@
 .hero{
-    width: 100vw;
-    height:90vh;
+    min-width: 100vw;
+    min-height:90vh;
     background-color: #1F1F1F;
     display: flex;
     flex-direction: column;
@@ -10,6 +10,9 @@
 .hero__intro{
     margin:30px 0;
     width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
 }   
 
@@ -58,10 +61,23 @@
 }
 
 @media (max-width:600px) {
+    .hero__intro{
+        margin-top: 10px;
+        align-items:center;
+    }
     .hero__intro__header{
         font-size: 50px;
+        text-align: center;
+
     }
     .hero__intro__desc{
-        width:90%;
+        text-align: center;
+        width:100%;
+        margin: 0;
+    }
+
+    .hero__intro__cat{
+        margin-top: 30px;
+        font-size: 20px;
     }
 }

@@ -1,4 +1,5 @@
 import classes from './Hero.module.css';
+import OurTeam from './OurTeam';
 
 const Hero = () => {
     return <section className={classes.hero}>
@@ -13,6 +14,7 @@ const Hero = () => {
                 Hire Us
             </button>
         </div>
+        <OurTeam/>
     </section>
 }
 
