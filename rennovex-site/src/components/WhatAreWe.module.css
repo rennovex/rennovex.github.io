@@ -24,7 +24,10 @@
 }
 .Whatarewe__desc__cont{
     margin: 5% ; 
-    background-color: #1f1f1f;
+    background: linear-gradient(107.08deg, #1F1F1F 37.5%, #511111 100%);
+    box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    padding: 5px;
 }
 .Whatarewe__header{
     font-size: 36px;
@@ -48,14 +51,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 100px 200px;
     height: 40vh;
 
 
 }
 .Whatarewe__desc__cont{
     margin-top: 50px;
-    background-color: #1f1f1f;
+    width:70vw;
+    background: linear-gradient(107.08deg, #1F1F1F 37.5%, #511111 100%);
+    box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    padding: 10px;
+
 
 }
 .Whatarewe__header{
@@ -64,8 +71,8 @@
 }
 
 .Whatarewe__desc{
-    margin: 20px;
     font-size: 24px;
+    
     color: #FFFFFF;
 }
 }
