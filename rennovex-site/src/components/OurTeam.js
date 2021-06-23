@@ -12,7 +12,7 @@ const OurTeam = () => {
     
     const [startIndex, setStartIndex] = useState(3);
     
-    const images = [
+    let imagesLink = [
         src, 
         src, 
         'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/Untitled87_20210621181311.png?alt=media&token=d8ecc5c4-7a0c-4ba3-be86-b7d103fc2f25',
@@ -25,7 +25,18 @@ const OurTeam = () => {
         src
     ];
 
-    const visibleImages = images.slice(startIndex, startIndex+numberOfImages)
+
+    let [images, setImages] = useState([])
+
+    const visibleImages = images.slice(startIndex, startIndex+numberOfImages);
+
+    console.log(visibleImages);
+
+    useEffect(()=>{
+        setImages(imagesLink.map(image=>{
+            return <img src={image}/>
+        }))
+    },[])
 
 
 
@@ -76,9 +87,7 @@ const OurTeam = () => {
             </button>
 
                 <div className={classes.image__track}>
-                    {visibleImages.map(image=>{
-                        return <img src={image}/>
-                    })}
+                    {visibleImages}
                 </div>
             
             <button className={classes['our-team__nav__button']} onClick={rightClickHandler}>
