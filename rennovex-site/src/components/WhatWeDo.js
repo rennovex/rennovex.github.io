@@ -1,24 +1,20 @@
-import classes from './WhatAreWe.module.css'
+import classes from './WhatWeDo.module.css';
 
 const Whatwedo = ()=>{
-return  <section className={classes.Whatwedo__main_cont}>
-    <h2 className={classes.Whatwedo__header}> What we Do?</h2>
-    <div className={classes.Whatwedo_cont}>
-        <div className={classes.Whatwedo__subcont}>
-            <h2 className={classes.Whatwedo_h2}>App Development</h2>
-            <div className={classes.Whatwedo__content}></div>
+    const cards = ['App Development', 'Web Development', 'Something else']
+
+    return  <section className={classes.main__container}>
+        <h2 className={classes.header}><span style={{color:'red'}}>What</span> we Do?</h2>
+        <div className={classes.track}>
+            {cards.map(x=>{
+                return <div className={classes.card}>
+                        <h2 className={classes.card__header}>{x}</h2>
+                    <div className={classes.card__content}></div>
+            </div>
+            })}
+            
         </div>
-        <div className={classes.Whatwedo__subcont}>
-        <h2 className={classes.Whatwedo_h2}>App Development</h2>
-            <div className={classes.Whatwedo__content}>
-                </div> 
-        </div>
-        <div className={classes.Whatwedo__subcont}>
-        <h2 className={classes.Whatwedo_h2}>App Development</h2>
-            <div className={classes.Whatwedo__content}></div>
-        </div>
-    </div>
-</section>
+    </section>
 }
 
 
