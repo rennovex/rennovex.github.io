@@ -8,7 +8,7 @@
 }
 
 .header{
-    display: inline;
+    /* display: inline;
     font-family: 'poppins';
     font-style: normal;
     font-weight: 500;
@@ -19,6 +19,10 @@
     text-align: center;
 
     color: #ffffff;
+    margin-bottom: 30px; */
+    font-size: 48px;
+    color: #FFFFFF;
+    font-family: 'poppins';
     margin-bottom: 30px;
 }
 
@@ -50,9 +54,7 @@
     color: #FFFFFF;
 }
 
-.card__container{
 
-}
 
 @media (max-width:950px) {
 
@@ -61,6 +63,10 @@
     }
     .card{
         margin:20px 0;
+        
+    }
+    .header{
+        font-size: 36px;
     }
     
 }

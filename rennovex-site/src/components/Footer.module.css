@@ -2,6 +2,7 @@
     background-color: rgb(7, 7, 7);
     min-height: 3px;
     display: flex;
+    flex-direction: column;
     padding:30px 0;
 }
 
@@ -11,7 +12,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-
+    margin: 0px;
 }
 
 .left-panel p{
@@ -22,6 +23,7 @@
     justify-self: center;
     padding-left:20px;
     font-weight: bold;
+    margin: 0px;
 }
 .left-panel::after{
     content: '';
@@ -31,4 +33,102 @@
     border-bottom: 120px solid transparent;
     
     border-left: 60px solid #171717;
+    margin: 0px;
+}
+
+
+  .Box{
+  /* background-color: red; */
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+  } 
+.Container {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1000px;
+    padding-left:10%;
+    margin: 0 auto;
+     /* background: rgb(63, 56, 56);  */
+}
+   
+.Column {
+    
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right:20%;
+}
+.logo{
+justify-self:flex-end;
+display: flex;
+padding-left:5%;
+}   
+.logos{
+    justify-self:space-evenly;
+    padding-left:10%;
+    display: flex;
+    
+    }  
+/* .Row {
+  display:flex;
+  margin-left:40%; 
+} */
+ 
+.FooterLink {
+  color: #fff;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  /* padding-right:20px; */
+}
+.FooterLink:hover {
+    color: rgb(255, 17, 0);
+   
+   
+} 
+.Heading {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20%;
+  font-weight: bold;
+}
+@media (max-width: 1000px) {
+.logos {
+ display:flex;
+ justify-content:flex-start;
+ 
+ width:200px;
+ height: 50px;
+   }
+ .Container{
+     padding-right: 70px;
+ }
+ .Column{
+    margin-top: 20px;
+     padding: 10px;
+
+    
+ } 
+ .Heading{
+     font-size: 14px;
+ }
+ .FooterLink{
+     font-size: 11px;
+ }
+ .logo{
+     width: 20px;
+ }
+ .FooterLink:hover {
+    color: rgb(255, 17, 0);
+    transition: 100ms ease-out;
+    font-size: 11px;
+} 
+.left-panel{
+    display:none;
+}
 }
