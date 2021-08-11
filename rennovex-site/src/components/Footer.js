@@ -10,6 +10,12 @@ const Footer = () => {
             </p>
         </div>   {/*left-panel*/}     
         <div className={classes.Container}>
+            <div className={classes.Column+ ''+classes.Chance} >
+            <a className={classes.FooterLink} href="#">
+              <h1 className={classes.Heading}>Got an app idea ?</h1>
+              <p className={classes.FooterLink}> Give us a chance to make it a reality</p>
+            </a>
+            </div>
             <div className={classes.Column}>
               
               <h1 className={classes.Heading}>About Us</h1>

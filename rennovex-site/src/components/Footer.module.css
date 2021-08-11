@@ -51,7 +51,7 @@
     flex-direction: row;
     justify-content: center;
     max-width: 1000px;
-    padding-left:10%;
+    padding-left:50%;
     margin: 0 auto;
      /* background: rgb(63, 56, 56);  */
 }
@@ -63,6 +63,7 @@
   text-align: left;
   padding-right:20%;
 }
+
 .logo{
 justify-self:flex-end;
 display: flex;
@@ -70,14 +71,12 @@ padding-left:5%;
 }   
 .logos{
     justify-self:space-evenly;
-    padding-left:10%;
+    padding-left:55%;
     display: flex;
     
     }  
-/* .Row {
-  display:flex;
-  margin-left:40%; 
-} */
+
+
  
 .FooterLink {
   color: #fff;
@@ -106,14 +105,13 @@ padding-left:5%;
  height: 50px;
    }
  .Container{
-     padding-right: 70px;
+     padding-left: 20%;
  }
  .Column{
     margin-top: 20px;
-     padding: 10px;
-
-    
+    padding: 10px;  
  } 
+ 
  .Heading{
      font-size: 14px;
  }
