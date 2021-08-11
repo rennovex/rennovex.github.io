@@ -21,6 +21,7 @@
     height: 40vh;
 
 
+
 }
 .Whatarewe__desc__cont{
     margin: 5% ; 
@@ -32,6 +33,7 @@
 .Whatarewe__header{
     font-size: 36px;
     color: #FFFFFF;
+    font-family: 'poppins';
 }
 
 .Whatarewe__desc{
@@ -53,7 +55,7 @@
     justify-content: center;
     height: 40vh;
     margin: 200px 0px;;
-
+    font-family: 'poppins';
 }
 .Whatarewe__desc__cont{
     margin-top: 50px;
