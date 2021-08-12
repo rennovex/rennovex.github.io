@@ -24,6 +24,10 @@
     align-items:center;
 }
 
+.our-team__images__container img:hover{
+    background-color: black;
+}
+
 .our-team__nav__button{
     background-color: #363636;
     border-radius: 15px;
@@ -34,6 +38,7 @@
     height:150px;
     margin: 25px 15px;
     border-radius: 10px;;
+    cursor: pointer;
 }
 
 .image__track{

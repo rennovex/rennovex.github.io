@@ -3,27 +3,24 @@ import classes from './OurTeam.module.css';
 
 
 const OurTeam = () => { 
-
-
-    
-
-    const src = 'https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=579&q=80';
     const [numberOfImages, setNumberOfImages] = useState(4);
     
-    const [startIndex, setStartIndex] = useState(3);
+    const [startIndex, setStartIndex] = useState(0);
     
     let imagesLink = [
-        src, 
-        src, 
-        'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/Untitled87_20210621181311.png?alt=media&token=d8ecc5c4-7a0c-4ba3-be86-b7d103fc2f25',
-        'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/IMG_20201231_204412__01.jpg?alt=media&token=d1e448c8-201d-4d99-a99a-d28be505b9bf', 
-        'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/20210607_111605.jpg?alt=media&token=9a80d7a5-60b8-4591-9c5c-18beee9229c9', 
-        'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/200798_Neeraj%20S%20D.jpg?alt=media&token=c6f7ff64-009b-44d7-a965-b331ae37e231',
-        'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/IMG_20210621_162741.jpg?alt=media&token=57339546-44b7-4716-8e4f-d978974a5057',
-        src, 
-        src, 
-        src
-    ];
+        {image:'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/20210520_124459-min.jpg?alt=media&token=341b2148-350d-4db4-871d-155b310fd44f',
+        linkedin:'http://linkedin.com/in/rohan-anil-kumar-2211661ba/',
+        name:'Rohan'},
+        {image:'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/200798_Neeraj%20S%20D-min.JPG?alt=media&token=f7c4cbe1-7250-46a0-9a35-0da3c0911e6c',
+        linkedin:'https://www.linkedin.com/in/neeraj-s-d-43b34b20a/',
+        name:'Neeraj'},
+        {image:'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/sreehari-min-min.JPG?alt=media&token=c760ae78-51b5-4b24-9531-e8e0fb531abe',
+        linkedin:'https://www.linkedin.com/in/sreehari-rajan-32b064207/',
+        name:'Sreehari'},
+        {image:'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/IMG_20210621_162741-min.jpg?alt=media&token=6c743a4f-b3b1-4193-8665-6301de1a1e0b',
+        linkedin:'https://www.linkedin.com/in/ashwin-binu-99942020a',
+        name:'Ashwin'}
+];
 
 
     let [images, setImages] = useState([])
@@ -34,7 +31,7 @@ const OurTeam = () => {
 
     useEffect(()=>{
         setImages(imagesLink.map(image=>{
-            return <img src={image}/>
+            return <img key={image.name} src={image.image} onClick={()=>{window.open(image.linkedin)}}/>
         }))
     },[])
 
@@ -62,17 +59,19 @@ const OurTeam = () => {
     const leftClickHandler =() => {
         
         setStartIndex((index)=>{
-            if(index == 0) return index;
+            if(index <= 0) return index;
             return index-1
         });
     };
     const rightClickHandler =() => {
         
         setStartIndex((index)=>{
-            if(index+numberOfImages == (images.length-1)) return index;
+            if(index+numberOfImages >= (images.length)) return index;
             return index+1;
         });
     };
+
+
 
     return <div className={classes['our-team__container']}>
         <div className={classes['our-team__text']}>
