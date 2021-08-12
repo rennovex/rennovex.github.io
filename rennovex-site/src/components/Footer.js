@@ -2,7 +2,7 @@ import classes from './Footer.module.css';
 
 
 const Footer = () => {
-    return <footer className={classes.footer}>
+    return <footer className={classes.footer} id='contact'>
       <div className={classes.Box}>
         <div className={classes['left-panel']}>
             <p>
@@ -52,7 +52,7 @@ const Footer = () => {
                  <path d="M5.33335 7.99984C6.80611 7.99984 8.00002 6.80593 8.00002 5.33317C8.00002 3.86041 6.80611 2.6665 5.33335 2.6665C3.86059 2.6665 2.66669 3.86041 2.66669 5.33317C2.66669 6.80593 3.86059 7.99984 5.33335 7.99984Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                  </svg>
           </a>
-          <a className={classes.logo} href="mailto:rennovex.com" onClick={e=>e.preventdefault()}><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a className={classes.logo} href="mailto:rennovex.com" ><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <path d="M5.33335 5.3335H26.6667C28.1334 5.3335 29.3334 6.5335 29.3334 8.00016V24.0002C29.3334 25.4668 28.1334 26.6668 26.6667 26.6668H5.33335C3.86669 26.6668 2.66669 25.4668 2.66669 24.0002V8.00016C2.66669 6.5335 3.86669 5.3335 5.33335 5.3335Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                  <path d="M29.3334 8L16 17.3333L2.66669 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                  </svg>

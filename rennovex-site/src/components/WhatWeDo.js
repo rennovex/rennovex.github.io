@@ -20,7 +20,7 @@ SMH
                        </div>
                    </div>]
 
-    return  <section className={classes.main__container}>
+    return  <section className={classes.main__container} id='services'>
         <h2 className={classes.header}><span style={{color:'red'}}>What</span><span> We Do ?</span></h2>
         <div className={classes.track}>
             {cards.map(x=>{
