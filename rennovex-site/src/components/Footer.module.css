@@ -92,9 +92,9 @@ padding-left:5%;
 }   
 .logos{
     justify-self:space-evenly;
-    padding-left:55%;
     display: flex;
-    
+    justify-content: flex-end;
+    margin-right:50px;
     }  
 
 

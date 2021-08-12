@@ -10,7 +10,7 @@ const Hero = () => {
             <div className={classes.hero__intro__desc}>
             We code for food!
             </div>
-           <a className={classes.Link} href="mailto:rennovex.com"> <button className={classes.hero__intro__cat}>
+           <a className={classes.Link} href="mailto:rennovex@gmail.com"> <button className={classes.hero__intro__cat}>
                 Contact Us
             </button></a>
         </div>

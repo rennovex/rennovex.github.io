@@ -78,7 +78,7 @@
 }
 
 .project__link:hover{
-    background-color:rgb(211, 211, 211)
+    background-color:thistle
 
 }
 
@@ -126,7 +126,7 @@
     .card1{
         align-self: center;
         margin:20px 0;
-        height: 250px;
+        height: 300px;
         width: 170px;
         
     }
@@ -134,7 +134,7 @@
         align-self: center;
         margin:20px 0;
         width: 170px;
-        height: 250px;
+        height: 300px;
     }
     .header{
         font-size: 36px;
