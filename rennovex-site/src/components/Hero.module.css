@@ -59,6 +59,16 @@
     padding:0 30px;
 }
 
+.Link button{
+    font-size: 25px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.Link button:hover{
+    background-color: red;
+}
+
 @media (max-width:600px) {
     .hero__intro{
         margin-top: 10px;

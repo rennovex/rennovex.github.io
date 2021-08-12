@@ -38,12 +38,13 @@
     padding:20px;
     margin: 0 10px;
     width:250px;
+    cursor: pointer;
 }
 
 .card__header{
     font-family: 'poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 23px;
     line-height: 48px;
     display: flex;
@@ -60,12 +61,16 @@
     font-size: large;
     font-family: 'poppins';
     font-style: normal;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #FFFFFF;
-    margin-top:40px;
+    margin-top: 10px;
+
+}
+
+.card:hover{
+    background: #161616;
 
 }
 
