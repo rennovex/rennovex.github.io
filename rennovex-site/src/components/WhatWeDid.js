@@ -1,4 +1,5 @@
 import classes from './WhatWeDid.module.css';
+import cambuzzIcon from '../assets/cambuzz_icon.png'
 
 const Whatwedid = ()=>{
     const cards = [<div><div className={classes.Whatwedid__content__fake}>
@@ -9,7 +10,10 @@ const Whatwedid = ()=>{
                     <p>Something’s cooking</p>
                    </div></div>,
                    <div><div className={classes.Whatwedid__content}>
-                    
+                    <img src={cambuzzIcon}/>
+                    <p className={classes.project__name}>Cambuzz</p>
+                    <p className={classes.project__desc}>Social media app for tkm</p>
+                    <button className={classes.project__link} onClick={()=>window.open('https://cambuzz.rennovex.com')}>visit</button>
 
                    </div></div>,
                    <div><div className={classes.Whatwedid__content__fake}>
