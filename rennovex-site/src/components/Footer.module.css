@@ -155,6 +155,7 @@ padding-left:5%;
  }
  .FooterLink{
      font-size: 11px;
+     word-break: break-all;
  }
  .logo{
      width: 20px;

@@ -30,3 +30,7 @@ a{
 html {
   scroll-behavior: smooth;
 }
+
+#root{
+  overflow:hidden
+}
