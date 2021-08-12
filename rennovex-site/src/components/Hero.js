@@ -8,11 +8,11 @@ const Hero = () => {
                 renno<span style={{color:'red'}}>vex</span>
             </div>
             <div className={classes.hero__intro__desc}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis in eget imperdiet sed eget tristique vitae. Sociis auctor sed in posuere.
+            We code for food!
             </div>
-            <button className={classes.hero__intro__cat}>
-                Hire Us
-            </button>
+           <a className={classes.Link} href="mailto:rennovex.com" onClick={e=>e.preventdefault()}> <button className={classes.hero__intro__cat}>
+                Contact Us
+            </button></a>
         </div>
         <OurTeam/>
     </section>
