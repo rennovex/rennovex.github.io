@@ -10,12 +10,15 @@ const Footer = () => {
             </p>
         </div>   {/*left-panel*/}     
         <div className={classes.Container}>
-            <div className={classes.Column+ ''+classes.Chance} >
-            <a className={classes.FooterLink} href="#">
+            <div className={classes.Column1+" "+ classes.chance_column} >
+            
               <h1 className={classes.Heading}>Got an app idea ?</h1>
-              <p className={classes.FooterLink}> Give us a chance to make it a reality</p>
+              <a className={classes.FooterLink} href="#">
+               Give us a chance to 
+              make it a reality
             </a>
             </div>
+            <div className={classes.Column1}>
             <div className={classes.Column}>
               
               <h1 className={classes.Heading}>About Us</h1>
@@ -32,7 +35,7 @@ const Footer = () => {
               <h1 className={classes.Heading}>Contact Us</h1>
               <a className={classes.FooterLink} href="#">rennovex@gmail.com</a>
             </div>
-          
+          </div>
         </div>{/*content*/}        
 
       </div>

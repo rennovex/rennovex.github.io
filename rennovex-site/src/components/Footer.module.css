@@ -49,20 +49,37 @@
    
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    max-width: 1000px;
-    padding-left:50%;
+    justify-content: stretch;
+    width: 100%;
+    /* max-width: 1000px; */
+    /* padding-left:50%; */
     margin: 0 auto;
-     /* background: rgb(63, 56, 56);  */
+     /* background: rgb(105, 32, 32);  */
 }
    
-.Column {
-    
+.Column1{
+   /* background-color: aqua;  */
+   width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.Column{
+    display: flex;
   flex-direction: column;
   text-align: left;
-  padding-right:20%;
 }
+.chance_column{
+    /* background-color: beige; */
+  
+    display: flex; 
+    flex-direction: column;
+    
+    
+}
+
+
 
 .logo{
 justify-self:flex-end;
@@ -80,7 +97,7 @@ padding-left:5%;
  
 .FooterLink {
   color: #fff;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-decoration: none;
   font-size: 24px;
   /* padding-right:20px; */
@@ -93,7 +110,7 @@ padding-left:5%;
 .Heading {
   font-size: 24px;
   color: #fff;
-  margin-bottom: 20%;
+  
   font-weight: bold;
 }
 @media (max-width: 1000px) {
