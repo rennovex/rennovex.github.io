@@ -11,12 +11,12 @@ const Footer = () => {
         </div>   {/*left-panel*/}     
         <div className={classes.Container}>
             <div className={classes.Column1+" "+ classes.chance_column} >
-            
+               <div className={classes.bgbox}>
               <h1 className={classes.Heading}>Got an app idea ?</h1>
               <a className={classes.FooterLink} href="#">
-               Give us a chance to 
-              make it a reality
-            </a>
+              <p> Give us a chance to </p>
+              <p> make it a reality</p>
+            </a></div>
             </div>
             <div className={classes.Column1}>
             <div className={classes.Column}>
