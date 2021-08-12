@@ -1,24 +1,24 @@
 import classes from './WhatWeDid.module.css';
 
 const Whatwedid = ()=>{
-    const cards = [<div><div className={classes.Whatwedid__content}>
-                   Oi wait!Coming soon...
+    const cards = [<div><div className={classes.Whatwedid__content__fake}>
+                   <p>Oi wait!</p><p>Coming soon...</p>
                    </div></div>,
-                   <div><div className={classes.Whatwedid__content}>
-                    Oi come on! 
-                    Something’s cooking
+                   <div><div className={classes.Whatwedid__content__fake}>
+                    <p>Oi come on! </p>
+                    <p>Something’s cooking</p>
                    </div></div>,
                    <div><div className={classes.Whatwedid__content}>
                     
 
                    </div></div>,
-                   <div><div className={classes.Whatwedid__content}>
-                Oi!
-                Have patience
+                   <div><div className={classes.Whatwedid__content__fake}>
+                <p>Oi!</p>
+                <p>Have patience</p>
                    </div></div>,
-                   <div><div className={classes.Whatwedid__content}>
-                    Oi! 
-                    we’re still young
+                   <div><div className={classes.Whatwedid__content__fake}>
+                    <p>Oi! </p>
+                    <p>we’re still young</p>
                    </div></div>]
 
     return  <section className={classes.main__container}>

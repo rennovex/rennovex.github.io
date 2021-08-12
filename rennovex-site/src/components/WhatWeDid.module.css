@@ -8,6 +8,10 @@
     
 }
 
+.Whatwedid__content__fake{
+    font-family: 'poppins';
+}
+
 .header{
     /* display: inline;
     font-family: 'poppins';
@@ -54,6 +58,14 @@
     padding:25px;
     margin: 0 10px;
     width:25%;
+}
+
+.card1, .card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
 }
 
 
