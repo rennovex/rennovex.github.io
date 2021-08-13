@@ -24,8 +24,8 @@ const Whatwedid = ()=>{
                     <p>Oi! </p>
                     <p>we’re still young</p>
                    </div></div>]
-
     return  <section className={classes.main__container}>
+        
         <h2 className={classes.header}><span style={{color:'red'}}>What </span> We Did ?</h2>
        
         <div className={classes.track}>
