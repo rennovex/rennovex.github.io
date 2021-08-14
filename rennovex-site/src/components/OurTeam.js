@@ -1,6 +1,15 @@
 import { useEffect, useState } from 'react';
 import classes from './OurTeam.module.css';
 
+import rohan from '../assets/rohan.jpg';
+import ashwin from '../assets/ashwin.jpg';
+import farhan from '../assets/farhan.png';
+import fayiz from '../assets/fayiz.jpg';
+import neeraj from '../assets/neeraj.jpg';
+import saharsh from '../assets/saharsh.jpg';
+import sreehari from '../assets/sreehari.jpg';
+import aldrin from '../assets/aldrin.jpg';
+
 
 const OurTeam = () => { 
     const [numberOfImages, setNumberOfImages] = useState(4);
@@ -8,18 +17,30 @@ const OurTeam = () => {
     const [startIndex, setStartIndex] = useState(0);
     
     let imagesLink = [
-        {image:'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/20210520_124459-min.jpg?alt=media&token=341b2148-350d-4db4-871d-155b310fd44f',
+        {image:rohan,
         linkedin:'http://linkedin.com/in/rohan-anil-kumar-2211661ba/',
         name:'Rohan'},
-        {image:'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/200798_Neeraj%20S%20D-min.JPG?alt=media&token=f7c4cbe1-7250-46a0-9a35-0da3c0911e6c',
+        {image:neeraj,
         linkedin:'https://www.linkedin.com/in/neeraj-s-d-43b34b20a/',
         name:'Neeraj'},
-        {image:'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/sreehari-min-min.JPG?alt=media&token=c760ae78-51b5-4b24-9531-e8e0fb531abe',
+        {image:sreehari,
         linkedin:'https://www.linkedin.com/in/sreehari-rajan-32b064207/',
         name:'Sreehari'},
-        {image:'https://firebasestorage.googleapis.com/v0/b/rennovex-site.appspot.com/o/IMG_20210621_162741-min.jpg?alt=media&token=6c743a4f-b3b1-4193-8665-6301de1a1e0b',
+        {image:ashwin,
         linkedin:'https://www.linkedin.com/in/ashwin-binu-99942020a',
-        name:'Ashwin'}
+        name:'Ashwin'},
+        {image:farhan,
+        linkedin:'https://www.linkedin.com/in/farhan-riyas-b49462206',
+        name:'Farhan Riyas'},
+        {image:fayiz,
+        linkedin:'https://www.linkedin.com/in/fayiz-umar/',
+        name:'Fayiz'},
+        {image:aldrin,
+        linkedin:'https://in.linkedin.com/in/aldrin-dennis-57b1ba175',
+        name:'Aldrin'},
+        {image:saharsh,
+        linkedin:'https://www.linkedin.com/in/saharsh-santhosh-a1b45b20a',
+        name:'Saharsh'}
 ];
 
 
@@ -31,7 +52,7 @@ const OurTeam = () => {
 
     useEffect(()=>{
         setImages(imagesLink.map(image=>{
-            return <img key={image.name} src={image.image} onClick={()=>{window.open(image.linkedin)}}/>
+            return <img key={image.name} class={classes.loading} alt={image.name} src={image.image} onClick={()=>{window.open(image.linkedin)}}/>
         }))
     },[])
 
