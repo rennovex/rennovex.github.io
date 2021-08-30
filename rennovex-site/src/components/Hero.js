@@ -8,10 +8,10 @@ const Hero = () => {
                 renno<span style={{color:'red'}}>vex</span>
             </div>
             <div className={classes.hero__intro__desc}>
-            We code for food!
+            Innovation starts with us
             </div>
-           <a className={classes.Link} href="mailto:rennovex@gmail.com"> <button className={classes.hero__intro__cat}>
-                Contact Us
+           <a className={classes.Link} href="https://forms.gle/EKB37qg46VNRayWs6"> <button className={classes.hero__intro__cat}>
+                Request a Call
             </button></a>
         </div>
         <OurTeam/>
